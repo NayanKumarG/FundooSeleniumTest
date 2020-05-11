@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="LoginTest(failed)">
+    <classes>
+      <class name="com.bridgelabz.test.LoginTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="loginPage" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- com.bridgelabz.test.LoginTest -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+  <test thread-count="5" name="RegisterTest(failed)">
+    <classes>
+      <class name="com.bridgelabz.test.RegistrationTest">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="registrationPage"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.bridgelabz.test.RegistrationTest -->
+    </classes>
+  </test> <!-- RegisterTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

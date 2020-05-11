@@ -1,0 +1,89 @@
+package com.bridgelabz.test;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
+import org.testng.Assert;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import com.bridgelabz.framework.BrowserFactory;
+
+public class UserTest extends BrowserFactory{
+
+	
+
+	
+	@Test(dataProvider = "testdata")
+	public void loginPage(String username , String pass) throws InterruptedException {
+
+System.out.println("token value:"+token);
+		driver.get("http://localhost:4200");
+		Thread.sleep(4000);
+		WebElement email = driver.findElement(By.id("mat-input-0")); 
+		email.sendKeys(username);
+		Thread.sleep(4000);
+		WebElement password = driver.findElement(By.id("mat-input-1")); 
+		password.sendKeys(pass);
+		Thread.sleep(4000);
+		WebElement login = driver.findElement(By.xpath("//span[contains(text(),'Login')]")); 
+		login.click();
+		Thread.sleep(10000);
+		
+		String actualUrl="http://localhost:4200/dashboard"; 
+		String expectedUrl= driver.getCurrentUrl(); 
+		Assert.assertEquals(expectedUrl,actualUrl);
+		
+
+	}
+
+	@DataProvider(name="testdata")
+	public Object[][] loginData()
+	{
+
+		Object[][] logindata = new Object[2][2];
+
+		logindata[0][0]="nayangunditharu@gmail.com";
+		logindata[0][1]="nayan123";
+
+		logindata[1][0]="nayan@gmail.com";
+		logindata[1][1]="nayan12345";
+
+
+
+		return logindata;
+
+	}
+	
+	  @Test
+	  public void registrationPage() throws InterruptedException {
+		  
+
+			driver.get("http://localhost:4200");
+			Thread.sleep(4000);
+			
+			WebElement link = driver.findElement(By.linkText("Create an Account"));
+			link.click();
+			Thread.sleep(4000);
+			WebElement username = driver.findElement(By.id("mat-input-2")); 
+			username.sendKeys("raj");
+			Thread.sleep(4000);
+			WebElement email = driver.findElement(By.id("mat-input-3")); 
+			email.sendKeys("nayangkumar@gmail.com");
+			Thread.sleep(4000);
+			WebElement password = driver.findElement(By.id("mat-input-4")); 
+			password.sendKeys("raj12345");
+			Thread.sleep(4000);
+			WebElement phonenum = driver.findElement(By.id("mat-input-5")); 
+			phonenum.sendKeys("9048200622");
+			Thread.sleep(4000);
+			WebElement register = driver.findElement(By.xpath("//span[contains(text(),'Register')]")); 
+			register.click();
+			Thread.sleep(10000);
+			String actualUrl="http://localhost:4200/login"; 
+			String expectedUrl= driver.getCurrentUrl(); 
+			Assert.assertEquals(expectedUrl,actualUrl);
+	  }
+	
+}

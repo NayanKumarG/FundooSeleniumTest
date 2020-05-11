@@ -1,0 +1,31 @@
+package com.bridgelabz.test;
+
+import org.testng.annotations.Test;
+
+import com.bridgelabz.framework.BrowserFactory;
+
+import lombok.extern.java.Log;
+import lombok.extern.slf4j.Slf4j;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeMethod;
+
+@Slf4j
+public class LoginTest {
+	
+	public static WebDriver driver;
+	
+	BrowserFactory factory;
+	
+	
+  @Test
+  public void f() {
+  }
+  
+  
+  @BeforeMethod
+  public void beforeMethod() {
+
+  }
+
+}

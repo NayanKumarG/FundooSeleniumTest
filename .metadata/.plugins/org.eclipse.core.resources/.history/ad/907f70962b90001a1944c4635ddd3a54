@@ -1,0 +1,28 @@
+package com.bridgelabz.test;
+
+import org.testng.annotations.Test;
+
+import com.bridgelabz.framework.BrowserFactory;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.BeforeMethod;
+
+public class LoginTest {
+	
+	public static WebDriver driver;
+	
+	BrowserFactory factory;
+	
+	
+  @Test
+  public void f() {
+  }
+  
+  
+  @BeforeMethod
+  public void beforeMethod() {
+	  
+	  
+  }
+
+}
