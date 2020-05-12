@@ -20,7 +20,7 @@ public class LoginTest extends BrowserFactory{
 
 
 	@Test(dataProvider = "testdata")
-	public void loginPage(String username , String pass) throws InterruptedException  {
+	public void loginPage(String username , String pass) throws InterruptedException {
 
 
 		driver.get("http://localhost:4200");

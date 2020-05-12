@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Nayan\AppData\Local\Temp\testng-eclipse-1141108561\testng-customsuite.xml</span>
+                    <span>C:\Users\Nayan\AppData\Local\Temp\testng-eclipse-655675212\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -181,25 +181,13 @@
                   </a> <!-- loginPage(nayan@gmail.com, nayan123) -->
                   <span class="method-name">loginPage</span>
                   <span class="parameters">(nayan@gmail.com, nayan123)</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 43.188
-  (Session info: chrome=81.0.4044.138)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-FFRREGV&apos;, ip: &apos;192.168.43.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\Nayan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53545}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f1f1eb7823a473a4eb4da110bdf0e013
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at com.bridgelabz.test.LoginTest.loginPage(LoginTest.java:26)
+                  <div class="stack-trace">java.lang.AssertionError: expected [http://localhost:4200/dashboard] but found [http://localhost:4200/]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at com.bridgelabz.test.LoginTest.loginPage(LoginTest.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -237,7 +225,7 @@ Session ID: f1f1eb7823a473a4eb4da110bdf0e013
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Nayan\AppData\Local\Temp\testng-eclipse-1141108561\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Nayan\AppData\Local\Temp\testng-eclipse-655675212\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -246,7 +234,11 @@ Session ID: f1f1eb7823a473a4eb4da110bdf0e013
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.bridgelabz.test.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.bridgelabz.test.LoginTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;loginPage&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.bridgelabz.test.LoginTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -290,11 +282,11 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginPage')
 data.setCell(0, 2, 'com.bridgelabz.test.LoginTest')
-data.setCell(0, 3, 48451);
+data.setCell(0, 3, 45601);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginPage')
 data.setCell(1, 2, 'com.bridgelabz.test.LoginTest')
-data.setCell(1, 3, 46726);
+data.setCell(1, 3, 34864);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -334,21 +326,21 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginPage(nayangunditharu@gmail.com, nayan123)</span>
-                <span class="method-start">61838 ms</span>
+                <span class="method-start">29298 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">110494 ms</span>
+                <span class="method-start">75023 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginPage(nayan@gmail.com, nayan123)</span>
-                <span class="method-start">110500 ms</span>
+                <span class="method-start">75025 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">157241 ms</span>
+                <span class="method-start">109916 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

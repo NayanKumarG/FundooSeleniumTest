@@ -13,53 +13,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelReadUtil {
 	
-//	  public static String[][] readExcelInto2DArray(String excelFilePath, String sheetName, int totalCols) {
-//
-//		    File file = new File(excelFilePath);
-//
-//		    String[][] tabArray = null;
-//
-//		    try {
-//		      OPCPackage opcPackage = OPCPackage.open(file.getAbsolutePath());
-//
-//		      Workbook wb = WorkbookFactory.create(opcPackage);
-//
-//		      Sheet sheet = wb.getSheet(sheetName);
-//
-//		      int totalRows = sheet.getLastRowNum() + 1;
-//
-//		      tabArray = new String[totalRows][totalCols];
-//
-//		      for (int i = 0; i < totalRows; i++) {
-//		        for (int j = 0; j < totalCols; j++) {
-//		          Cell cell = sheet.getRow(i).getCell(j);
-//
-//		          if (cell == null)
-//		            continue;
-//
-//		          switch (cell.getCellType()) {
-//		          case BOOLEAN:
-//		            tabArray[i][j] = String.valueOf(cell.getBooleanCellValue());
-//		            break;
-//		          case NUMERIC:
-//		            tabArray[i][j] = String.valueOf(cell.getNumericCellValue());
-//		            break;
-//		          case STRING:
-//		            tabArray[i][j] = cell.getStringCellValue();
-//		            break;
-//		          default:
-//		            tabArray[i][j] = "";
-//		            break;
-//		          }
-//		        }
-//		      }
-//		    } catch (Exception e) {
-//		      e.printStackTrace();
-//		      throw new RuntimeException(e);
-//		    }
-//
-//		    return tabArray;
-//		  }
+
 	
 	XSSFWorkbook wb;
 	XSSFSheet sheet;
@@ -91,6 +45,54 @@ public class ExcelReadUtil {
 			row = row +1;
 			return row;
 		}
+		
+//		  public static String[][] readExcelInto2DArray(String excelFilePath, String sheetName, int totalCols) {
+		//
+//				    File file = new File(excelFilePath);
+		//
+//				    String[][] tabArray = null;
+		//
+//				    try {
+//				      OPCPackage opcPackage = OPCPackage.open(file.getAbsolutePath());
+		//
+//				      Workbook wb = WorkbookFactory.create(opcPackage);
+		//
+//				      Sheet sheet = wb.getSheet(sheetName);
+		//
+//				      int totalRows = sheet.getLastRowNum() + 1;
+		//
+//				      tabArray = new String[totalRows][totalCols];
+		//
+//				      for (int i = 0; i < totalRows; i++) {
+//				        for (int j = 0; j < totalCols; j++) {
+//				          Cell cell = sheet.getRow(i).getCell(j);
+		//
+//				          if (cell == null)
+//				            continue;
+		//
+//				          switch (cell.getCellType()) {
+//				          case BOOLEAN:
+//				            tabArray[i][j] = String.valueOf(cell.getBooleanCellValue());
+//				            break;
+//				          case NUMERIC:
+//				            tabArray[i][j] = String.valueOf(cell.getNumericCellValue());
+//				            break;
+//				          case STRING:
+//				            tabArray[i][j] = cell.getStringCellValue();
+//				            break;
+//				          default:
+//				            tabArray[i][j] = "";
+//				            break;
+//				          }
+//				        }
+//				      }
+//				    } catch (Exception e) {
+//				      e.printStackTrace();
+//				      throw new RuntimeException(e);
+//				    }
+		//
+//				    return tabArray;
+//				  }
 		
 	
 

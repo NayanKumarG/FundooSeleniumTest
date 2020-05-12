@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="172770" started-at="2020-05-11T11:34:07 BST" finished-at="2020-05-11T11:36:59 BST">
+  <suite name="Default suite" duration-ms="118367" started-at="2020-05-12T07:07:20 BST" finished-at="2020-05-12T07:09:19 BST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="172770" started-at="2020-05-11T11:34:07 BST" finished-at="2020-05-11T11:36:59 BST">
+    <test name="Default test" duration-ms="118367" started-at="2020-05-12T07:07:20 BST" finished-at="2020-05-12T07:09:19 BST">
       <class name="com.bridgelabz.test.LoginTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bridgelabz.test.LoginTest@59e5ddf]" name="beforeMethod" is-config="true" duration-ms="61835" started-at="2020-05-11T11:34:12 BST" finished-at="2020-05-11T11:35:14 BST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bridgelabz.test.LoginTest@1f57539]" name="beforeMethod" is-config="true" duration-ms="29296" started-at="2020-05-12T07:07:24 BST" finished-at="2020-05-12T07:07:54 BST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="loginPage(java.lang.String, java.lang.String)[pri:0, instance:com.bridgelabz.test.LoginTest@59e5ddf]" name="loginPage" duration-ms="48451" started-at="2020-05-11T11:35:14 BST" data-provider="testdata" finished-at="2020-05-11T11:36:02 BST">
+        <test-method status="FAIL" signature="loginPage(java.lang.String, java.lang.String)[pri:0, instance:com.bridgelabz.test.LoginTest@1f57539]" name="loginPage" duration-ms="45601" started-at="2020-05-12T07:07:54 BST" data-provider="testdata" finished-at="2020-05-12T07:08:39 BST">
           <params>
             <param index="0">
               <value>
@@ -70,11 +70,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPage -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bridgelabz.test.LoginTest@59e5ddf]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-05-11T11:36:03 BST" finished-at="2020-05-11T11:36:03 BST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bridgelabz.test.LoginTest@1f57539]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-05-12T07:08:39 BST" finished-at="2020-05-12T07:08:39 BST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="loginPage(java.lang.String, java.lang.String)[pri:0, instance:com.bridgelabz.test.LoginTest@59e5ddf]" name="loginPage" duration-ms="46726" started-at="2020-05-11T11:36:03 BST" data-provider="testdata" finished-at="2020-05-11T11:36:49 BST">
+        <test-method status="FAIL" signature="loginPage(java.lang.String, java.lang.String)[pri:0, instance:com.bridgelabz.test.LoginTest@1f57539]" name="loginPage" duration-ms="34864" started-at="2020-05-12T07:08:39 BST" data-provider="testdata" finished-at="2020-05-12T07:09:14 BST">
           <params>
             <param index="0">
               <value>
@@ -87,36 +87,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[timeout: Timed out receiving message from renderer: 43.188
-  (Session info: chrome=81.0.4044.138)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-FFRREGV', ip: '192.168.43.114', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\Nayan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53545}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f1f1eb7823a473a4eb4da110bdf0e013]]>
+              <![CDATA[expected [http://localhost:4200/dashboard] but found [http://localhost:4200/]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 43.188
-  (Session info: chrome=81.0.4044.138)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-FFRREGV', ip: '192.168.43.114', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\Nayan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53545}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: f1f1eb7823a473a4eb4da110bdf0e013
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-at com.bridgelabz.test.LoginTest.loginPage(LoginTest.java:26)
+              <![CDATA[java.lang.AssertionError: expected [http://localhost:4200/dashboard] but found [http://localhost:4200/]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at com.bridgelabz.test.LoginTest.loginPage(LoginTest.java:40)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -147,11 +129,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPage -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.bridgelabz.test.LoginTest@59e5ddf]" name="afterMethod" is-config="true" duration-ms="10225" started-at="2020-05-11T11:36:49 BST" finished-at="2020-05-11T11:36:59 BST">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.bridgelabz.test.LoginTest@1f57539]" name="afterMethod" is-config="true" duration-ms="4503" started-at="2020-05-12T07:09:14 BST" finished-at="2020-05-12T07:09:19 BST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
