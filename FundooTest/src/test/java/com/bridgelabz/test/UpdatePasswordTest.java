@@ -12,6 +12,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
 
 public class UpdatePasswordTest {
@@ -61,13 +62,19 @@ public class UpdatePasswordTest {
 
 		WebElement submit = driver.findElement(By.xpath("//span[contains(text(),'reset')]")); 
 		submit.click();
-		Thread.sleep(10000);
+		Thread.sleep(20000);
 		
 		String actualUrl="http://localhost:4200/login"; 
 		String expectedUrl= driver.getCurrentUrl(); 
 		Assert.assertEquals(expectedUrl,actualUrl);
 		
 		
+  }
+  
+  @AfterClass
+  public void afterMethod()
+  {
+	  driver.quit();
   }
 
 }

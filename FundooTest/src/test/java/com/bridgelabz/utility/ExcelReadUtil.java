@@ -31,11 +31,19 @@ public class ExcelReadUtil {
 			
 		}
 	}
+	
 		
 		public String getData(int sheetNumber , int row , int column)
 		{
 			sheet = wb.getSheetAt(sheetNumber);
 			String data = sheet.getRow(row).getCell(column).getStringCellValue();
+			return data;
+		}
+		
+		public long getNumericData(int sheetNumber , int row , int column)
+		{
+			sheet = wb.getSheetAt(sheetNumber);
+			long data = (long) sheet.getRow(row).getCell(column).getNumericCellValue();
 			return data;
 		}
 		

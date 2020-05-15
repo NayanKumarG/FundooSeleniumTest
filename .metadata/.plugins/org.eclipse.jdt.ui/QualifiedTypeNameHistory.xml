@@ -11,7 +11,6 @@
 <fullyQualifiedTypeName name="org.testng.annotations.DataProvider"/>
 <fullyQualifiedTypeName name="io.github.bonigarcia.wdm.WebDriverManager"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
-<fullyQualifiedTypeName name="org.testng.annotations.AfterMethod"/>
 <fullyQualifiedTypeName name="org.testng.Assert"/>
 <fullyQualifiedTypeName name="com.bridgelabz.framework.BrowserFactory"/>
 <fullyQualifiedTypeName name="org.testng.annotations.AfterClass"/>
@@ -19,4 +18,15 @@
 <fullyQualifiedTypeName name="org.apache.poi.xssf.usermodel.XSSFSheet"/>
 <fullyQualifiedTypeName name="java.io.FileInputStream"/>
 <fullyQualifiedTypeName name="org.apache.poi.xssf.usermodel.XSSFWorkbook"/>
+<fullyQualifiedTypeName name="com.aventstack.extentreports.ExtentTest"/>
+<fullyQualifiedTypeName name="com.aventstack.extentreports.reporter.ExtentHtmlReporter"/>
+<fullyQualifiedTypeName name="com.aventstack.extentreports.reporter.configuration.Theme"/>
+<fullyQualifiedTypeName name="com.aventstack.extentreports.ExtentReports"/>
+<fullyQualifiedTypeName name="com.bridgelabz.utility.ExtentReport"/>
+<fullyQualifiedTypeName name="org.testng.annotations.BeforeTest"/>
+<fullyQualifiedTypeName name="org.testng.annotations.AfterTest"/>
+<fullyQualifiedTypeName name="org.testng.ITestResult"/>
+<fullyQualifiedTypeName name="com.aventstack.extentreports.Status"/>
+<fullyQualifiedTypeName name="com.aventstack.extentreports.MediaEntityBuilder"/>
+<fullyQualifiedTypeName name="org.testng.annotations.AfterMethod"/>
 </qualifiedTypeNameHistroy>

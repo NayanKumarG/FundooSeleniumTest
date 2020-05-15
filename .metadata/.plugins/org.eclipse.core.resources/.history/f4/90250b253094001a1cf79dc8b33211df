@@ -1,0 +1,9 @@
+package com.bridgelabz.test;
+
+import org.testng.annotations.Test;
+
+public class SidenavTest {
+  @Test
+  public void f() {
+  }
+}

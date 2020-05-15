@@ -1,0 +1,48 @@
+package com.bridgelabz.test;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.html5.LocalStorage;
+import org.openqa.selenium.html5.WebStorage;
+import org.testng.annotations.Test;
+
+import com.bridgelabz.framework.BrowserFactory;
+
+public class SidenavTest extends BrowserFactory{
+	
+	private String token="eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyNCJ9.SsxOKrdA-pkgRPoKphDdd2M2kLmkw0bURdtKu8yc4bD-ivlbqJXtsKqpj1q7HSNb8w-vTsTcP9LQH58dalnZ3Q";
+	
+  @Test
+  public void sidenavTest() {
+//	  driver.get("http://localhost:4200");
+//		sleep(4);
+//		WebElement email = driver.findElement(By.id("mat-input-0")); 
+//		email.sendKeys("nayangunditharu@gmail.com");
+//		sleep(4);
+//		WebElement password = driver.findElement(By.id("mat-input-1")); 
+//		password.sendKeys("nayan123");
+//		sleep(4);
+//		WebElement login = driver.findElement(By.xpath("//span[contains(text(),'Login')]")); 
+//		login.click();
+//		sleep(40);
+	 
+	  driver.get("http://localhost:4200/dashboard");
+	  LocalStorage local = ((WebStorage) driver).getLocalStorage();    
+
+	    local.setItem("token", token);
+
+	   
+	  sleep(40);
+	  
+  }
+  
+  
+  public void sleep(int sec)
+  {
+	  try {
+		Thread.sleep(sec*1000);
+	} catch (InterruptedException e) {
+		e.printStackTrace();
+	}
+  }
+}

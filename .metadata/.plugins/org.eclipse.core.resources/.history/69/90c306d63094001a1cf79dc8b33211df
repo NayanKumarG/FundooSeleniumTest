@@ -1,0 +1,14 @@
+package com.bridgelabz.test;
+
+import org.testng.annotations.Test;
+
+import com.bridgelabz.framework.BrowserFactory;
+
+public class SidenavTest extends BrowserFactory{
+	
+  @Test
+  public void sidenavTest() {
+	  
+	  
+  }
+}

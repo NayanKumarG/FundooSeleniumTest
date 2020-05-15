@@ -2,40 +2,50 @@
 <testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="118367" started-at="2020-05-12T07:07:20 BST" finished-at="2020-05-12T07:09:19 BST">
+  <suite name="Default suite" duration-ms="200838" started-at="2020-05-14T19:07:29 BST" finished-at="2020-05-14T19:10:50 BST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="118367" started-at="2020-05-12T07:07:20 BST" finished-at="2020-05-12T07:09:19 BST">
-      <class name="com.bridgelabz.test.LoginTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bridgelabz.test.LoginTest@1f57539]" name="beforeMethod" is-config="true" duration-ms="29296" started-at="2020-05-12T07:07:24 BST" finished-at="2020-05-12T07:07:54 BST">
+    <test name="Default test" duration-ms="200838" started-at="2020-05-14T19:07:29 BST" finished-at="2020-05-14T19:10:50 BST">
+      <class name="com.bridgelabz.test.RegistrationTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bridgelabz.test.RegistrationTest@4d41cee]" name="beforeMethod" is-config="true" duration-ms="32241" started-at="2020-05-14T19:07:37 BST" finished-at="2020-05-14T19:08:09 BST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="loginPage(java.lang.String, java.lang.String)[pri:0, instance:com.bridgelabz.test.LoginTest@1f57539]" name="loginPage" duration-ms="45601" started-at="2020-05-12T07:07:54 BST" data-provider="testdata" finished-at="2020-05-12T07:08:39 BST">
+        <test-method status="FAIL" signature="registrationPage(java.lang.String, java.lang.String, java.lang.String, long)[pri:0, instance:com.bridgelabz.test.RegistrationTest@4d41cee]" name="registrationPage" duration-ms="74518" started-at="2020-05-14T19:08:09 BST" data-provider="registerdata" finished-at="2020-05-14T19:09:23 BST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[nayangunditharu@gmail.com]]>
+                <![CDATA[raj]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[nayan123]]>
+                <![CDATA[nayangkumar@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[nayan1234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9048200622]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [http://localhost:4200/dashboard] but found [http://localhost:4200/]]]>
+              <![CDATA[expected [http://localhost:4200/login] but found [http://localhost:4200/registration]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [http://localhost:4200/dashboard] but found [http://localhost:4200/]
+              <![CDATA[java.lang.AssertionError: expected [http://localhost:4200/login] but found [http://localhost:4200/registration]
 at org.testng.Assert.fail(Assert.java:97)
 at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:575)
 at org.testng.Assert.assertEquals(Assert.java:585)
-at com.bridgelabz.test.LoginTest.loginPage(LoginTest.java:40)
+at com.bridgelabz.test.RegistrationTest.registrationPage(RegistrationTest.java:58)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -69,36 +79,46 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginPage -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bridgelabz.test.LoginTest@1f57539]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-05-12T07:08:39 BST" finished-at="2020-05-12T07:08:39 BST">
+        </test-method> <!-- registrationPage -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bridgelabz.test.RegistrationTest@4d41cee]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-05-14T19:09:24 BST" finished-at="2020-05-14T19:09:24 BST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="loginPage(java.lang.String, java.lang.String)[pri:0, instance:com.bridgelabz.test.LoginTest@1f57539]" name="loginPage" duration-ms="34864" started-at="2020-05-12T07:08:39 BST" data-provider="testdata" finished-at="2020-05-12T07:09:14 BST">
+        <test-method status="FAIL" signature="registrationPage(java.lang.String, java.lang.String, java.lang.String, long)[pri:0, instance:com.bridgelabz.test.RegistrationTest@4d41cee]" name="registrationPage" duration-ms="73547" started-at="2020-05-14T19:09:24 BST" data-provider="registerdata" finished-at="2020-05-14T19:10:37 BST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[nayan@gmail.com]]>
+                <![CDATA[raj]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[nayan123]]>
+                <![CDATA[nayang]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[nayan1234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9048200622]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [http://localhost:4200/dashboard] but found [http://localhost:4200/]]]>
+              <![CDATA[expected [http://localhost:4200/login] but found [http://localhost:4200/registration]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [http://localhost:4200/dashboard] but found [http://localhost:4200/]
+              <![CDATA[java.lang.AssertionError: expected [http://localhost:4200/login] but found [http://localhost:4200/registration]
 at org.testng.Assert.fail(Assert.java:97)
 at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:575)
 at org.testng.Assert.assertEquals(Assert.java:585)
-at com.bridgelabz.test.LoginTest.loginPage(LoginTest.java:40)
+at com.bridgelabz.test.RegistrationTest.registrationPage(RegistrationTest.java:58)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -132,12 +152,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginPage -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.bridgelabz.test.LoginTest@1f57539]" name="afterMethod" is-config="true" duration-ms="4503" started-at="2020-05-12T07:09:14 BST" finished-at="2020-05-12T07:09:19 BST">
+        </test-method> <!-- registrationPage -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.bridgelabz.test.RegistrationTest@4d41cee]" name="afterMethod" is-config="true" duration-ms="11892" started-at="2020-05-14T19:10:38 BST" finished-at="2020-05-14T19:10:49 BST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.bridgelabz.test.LoginTest -->
+      </class> <!-- com.bridgelabz.test.RegistrationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
