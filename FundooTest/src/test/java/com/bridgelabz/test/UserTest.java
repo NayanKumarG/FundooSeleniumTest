@@ -38,28 +38,28 @@ public class UserTest extends BrowserFactory{
 	}
 	
 	@Test(dataProvider = "registerdata")
-	  public void registrationPage() throws InterruptedException {
+	  public void registrationPage(String name , String useremail , String userpassword , long mob  ) throws InterruptedException {
 		
 		test = extent.createTest("User Registration");
 		  
 
-			driver.get("http://localhost:4200");
-			Thread.sleep(4000);
+			driver.get("http://localhost:4200/login");
+			Thread.sleep(30000);
 			
 			WebElement link = driver.findElement(By.linkText("Create an Account"));
 			link.click();
 			Thread.sleep(4000);
 			WebElement username = driver.findElement(By.id("mat-input-2")); 
-			username.sendKeys("raj");
+			username.sendKeys(name);
 			Thread.sleep(4000);
 			WebElement email = driver.findElement(By.id("mat-input-3")); 
-			email.sendKeys("nayangkumar");
+			email.sendKeys(useremail);
 			Thread.sleep(4000);
 			WebElement password = driver.findElement(By.id("mat-input-4")); 
-			password.sendKeys("raj12345");
+			password.sendKeys(userpassword);
 			Thread.sleep(4000);
 			WebElement phonenum = driver.findElement(By.id("mat-input-5")); 
-			phonenum.sendKeys("9048200622");
+			phonenum.sendKeys(String.valueOf(mob));
 			Thread.sleep(4000);
 			WebElement register = driver.findElement(By.xpath("//span[contains(text(),'Register')]")); 
 			register.click();
@@ -69,12 +69,12 @@ public class UserTest extends BrowserFactory{
 			Assert.assertEquals(expectedUrl,actualUrl);
 	  }
 	
-	@Test(dataProvider = "testdata")
+	@Test(dataProvider = "logindata")
 	public void loginPage(String username , String pass) throws InterruptedException {
 
 		test = extent.createTest("User Login");
-		driver.get("http://localhost:4200");
-		Thread.sleep(4000);
+		driver.get("http://localhost:4200/login");
+		Thread.sleep(30000);
 		WebElement email = driver.findElement(By.id("mat-input-0")); 
 		email.sendKeys(username);
 		Thread.sleep(4000);
@@ -83,7 +83,7 @@ public class UserTest extends BrowserFactory{
 		Thread.sleep(4000);
 		WebElement login = driver.findElement(By.xpath("//span[contains(text(),'Login')]")); 
 		login.click();
-		Thread.sleep(20000);
+		Thread.sleep(60000);
 		
 		String actualUrl="http://localhost:4200/dashboard"; 
 		String expectedUrl= driver.getCurrentUrl(); 
@@ -98,7 +98,7 @@ public class UserTest extends BrowserFactory{
 		  test = extent.createTest("Forgot account");
 		  
 		  driver.get("http://localhost:4200");
-			Thread.sleep(4000);
+			Thread.sleep(30000);
 			
 			WebElement link = driver.findElement(By.linkText("Forgotten Account?"));
 			link.click();
@@ -112,20 +112,20 @@ public class UserTest extends BrowserFactory{
 			Thread.sleep(10000);
 	  }
 	  
-	  @Test
-	  public void updatePassword() throws InterruptedException {
+	  @Test(dataProvider = "passworddata")
+	  public void updatePassword(String pass , String confPass) throws InterruptedException {
 		  
 		  test = extent.createTest("Update password");
 		  
 		  driver.get("http://localhost:4200/resetPassword/"+token);
-			Thread.sleep(4000);
+			Thread.sleep(15000);
 			
 			WebElement password = driver.findElement(By.id("mat-input-0")); 
-			password.sendKeys("nayan123");
+			password.sendKeys(pass);
 			Thread.sleep(4000);
 			
 			WebElement confirmPassword = driver.findElement(By.id("mat-input-1")); 
-			confirmPassword.sendKeys("nayan123");
+			confirmPassword.sendKeys(confPass);
 			Thread.sleep(4000);
 			
 
@@ -165,7 +165,7 @@ public class UserTest extends BrowserFactory{
 		  extent.flush();
 	}
 
-	@DataProvider(name="testdata")
+	@DataProvider(name="logindata")
 	public Object[][] loginData()
 	{
 
@@ -187,27 +187,43 @@ public class UserTest extends BrowserFactory{
 
 	}
 	
+	
 	@DataProvider(name="registerdata")
 	public Object[][] registerData()
 	{
 
-		ExcelReadUtil config = new ExcelReadUtil("./src/test/resources/login-data.xlsx");
+		ExcelReadUtil config = new ExcelReadUtil("./src/test/resources/register-data.xlsx");
 
 		int rows = config.getRowCount(0);
 		Object[][] registerdata = new Object[rows][4];
 		
 		for(int i=0 ; i <rows ; i++) {
-			System.out.println(config.getData(0, i, 0));
-			System.out.println(config.getData(0, i, 1));
 			
 			registerdata[i][0]=config.getData(0, i, 0);
 			registerdata[i][1]=config.getData(0, i, 1);
 			registerdata[i][2]=config.getData(0, i, 2);
-			registerdata[i][3]=config.getData(0, i, 3);
+			registerdata[i][3]=config.getNumericData(0, i, 3);
 			
 			
 		}
 		return registerdata;
+
+	}
+	
+	@DataProvider(name="passworddata")
+	public Object[][] passwordData()
+	{
+
+
+		
+		Object[][] passworddata = new Object[2][2];
+			
+			passworddata[0][0]="nayan123";
+			passworddata[0][1]="nayan1234";
+			passworddata[1][0]="nayan123";
+			passworddata[1][1]="nayan123";
+			
+		return passworddata;
 
 	}
 

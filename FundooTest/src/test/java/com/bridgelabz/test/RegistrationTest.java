@@ -68,8 +68,6 @@ public class RegistrationTest extends BrowserFactory {
 		Object[][] registerdata = new Object[rows][4];
 		
 		for(int i=0 ; i <rows ; i++) {
-			System.out.println(config.getData(0, i, 0));
-			System.out.println(config.getData(0, i, 1));
 			
 			registerdata[i][0]=config.getData(0, i, 0);
 			registerdata[i][1]=config.getData(0, i, 1);

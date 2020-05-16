@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bridgelabz.test.RegistrationTest">
+      <class name="com.bridgelabz.test.NoteServiceTest">
         <methods>
           <include name="beforeMethod"/>
-          <include name="registrationPage" invocation-numbers="0 1"/>
           <include name="afterMethod"/>
+          <include name="createNote"/>
         </methods>
-      </class> <!-- com.bridgelabz.test.RegistrationTest -->
+      </class> <!-- com.bridgelabz.test.NoteServiceTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

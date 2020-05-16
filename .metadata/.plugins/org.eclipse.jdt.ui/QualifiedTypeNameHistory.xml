@@ -12,7 +12,6 @@
 <fullyQualifiedTypeName name="io.github.bonigarcia.wdm.WebDriverManager"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
 <fullyQualifiedTypeName name="org.testng.Assert"/>
-<fullyQualifiedTypeName name="com.bridgelabz.framework.BrowserFactory"/>
 <fullyQualifiedTypeName name="org.testng.annotations.AfterClass"/>
 <fullyQualifiedTypeName name="com.bridgelabz.utility.ExcelReadUtil"/>
 <fullyQualifiedTypeName name="org.apache.poi.xssf.usermodel.XSSFSheet"/>
@@ -29,4 +28,5 @@
 <fullyQualifiedTypeName name="com.aventstack.extentreports.Status"/>
 <fullyQualifiedTypeName name="com.aventstack.extentreports.MediaEntityBuilder"/>
 <fullyQualifiedTypeName name="org.testng.annotations.AfterMethod"/>
+<fullyQualifiedTypeName name="com.bridgelabz.framework.BrowserFactory"/>
 </qualifiedTypeNameHistroy>

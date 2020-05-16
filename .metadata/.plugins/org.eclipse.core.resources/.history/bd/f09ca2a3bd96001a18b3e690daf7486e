@@ -1,0 +1,231 @@
+package com.bridgelabz.test;
+
+import java.io.IOException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.bridgelabz.framework.BrowserFactory;
+import com.bridgelabz.utility.ExcelReadUtil;
+import com.bridgelabz.utility.ExtentReport;
+
+public class UserTest extends BrowserFactory{
+
+	private String token="eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyNCJ9.SsxOKrdA-pkgRPoKphDdd2M2kLmkw0bURdtKu8yc4bD-ivlbqJXtsKqpj1q7HSNb8w-vTsTcP9LQH58dalnZ3Q";
+	
+	
+	public ExtentTest test;
+	public ExtentReports extent;
+	ExtentReport report = new ExtentReport();
+	String testName = "userTestreports";
+ 
+	@BeforeTest 
+	public void beforeTest()
+	{
+
+		extent = report.setExtent(testName);
+	}
+	
+	@Test(dataProvider = "registerdata")
+	  public void registrationPage(String name , String useremail , String userpassword , long mob  ) throws InterruptedException {
+		
+		test = extent.createTest("User Registration");
+		  
+
+			driver.get("http://localhost:4200");
+			Thread.sleep(4000);
+			
+			WebElement link = driver.findElement(By.linkText("Create an Account"));
+			link.click();
+			Thread.sleep(4000);
+			WebElement username = driver.findElement(By.id("mat-input-2")); 
+			username.sendKeys(name);
+			Thread.sleep(4000);
+			WebElement email = driver.findElement(By.id("mat-input-3")); 
+			email.sendKeys(useremail);
+			Thread.sleep(4000);
+			WebElement password = driver.findElement(By.id("mat-input-4")); 
+			password.sendKeys(userpassword);
+			Thread.sleep(4000);
+			WebElement phonenum = driver.findElement(By.id("mat-input-5")); 
+			phonenum.sendKeys(String.valueOf(mob));
+			Thread.sleep(4000);
+			WebElement register = driver.findElement(By.xpath("//span[contains(text(),'Register')]")); 
+			register.click();
+			Thread.sleep(10000);
+			String actualUrl="http://localhost:4200/login"; 
+			String expectedUrl= driver.getCurrentUrl(); 
+			Assert.assertEquals(expectedUrl,actualUrl);
+	  }
+	
+	@Test(dataProvider = "logindata")
+	public void loginPage(String username , String pass) throws InterruptedException {
+
+		test = extent.createTest("User Login");
+		driver.get("http://localhost:4200/login");
+		Thread.sleep(40000);
+		WebElement email = driver.findElement(By.id("mat-input-0")); 
+		email.sendKeys(username);
+		Thread.sleep(4000);
+		WebElement password = driver.findElement(By.id("mat-input-1")); 
+		password.sendKeys(pass);
+		Thread.sleep(4000);
+		WebElement login = driver.findElement(By.xpath("//span[contains(text(),'Login')]")); 
+		login.click();
+		Thread.sleep(60000);
+		
+		String actualUrl="http://localhost:4200/dashboard"; 
+		String expectedUrl= driver.getCurrentUrl(); 
+		Assert.assertEquals(expectedUrl,actualUrl);
+		
+
+	}
+	
+	  @Test
+	  public void forgotAccount() throws InterruptedException {
+		  
+		  test = extent.createTest("Forgot account");
+		  
+		  driver.get("http://localhost:4200");
+			Thread.sleep(4000);
+			
+			WebElement link = driver.findElement(By.linkText("Forgotten Account?"));
+			link.click();
+			Thread.sleep(4000);
+			
+			WebElement email = driver.findElement(By.id("mat-input-2")); 
+			email.sendKeys("nayangunditharu@gmail.com");
+			Thread.sleep(4000);
+			WebElement submit = driver.findElement(By.xpath("//span[@class='mat-button-wrapper']")); 
+			submit.click();
+			Thread.sleep(10000);
+	  }
+	  
+	  @Test(dataProvider = "passworddata")
+	  public void updatePassword(String pass , String confPass) throws InterruptedException {
+		  
+		  test = extent.createTest("Update password");
+		  
+		  driver.get("http://localhost:4200/resetPassword/"+token);
+			Thread.sleep(4000);
+			
+			WebElement password = driver.findElement(By.id("mat-input-0")); 
+			password.sendKeys(pass);
+			Thread.sleep(4000);
+			
+			WebElement confirmPassword = driver.findElement(By.id("mat-input-1")); 
+			confirmPassword.sendKeys(confPass);
+			Thread.sleep(4000);
+			
+
+			WebElement submit = driver.findElement(By.xpath("//span[contains(text(),'reset')]")); 
+			submit.click();
+			Thread.sleep(20000);
+			
+			String actualUrl="http://localhost:4200/login"; 
+			String expectedUrl= driver.getCurrentUrl(); 
+			Assert.assertEquals(expectedUrl,actualUrl);
+			
+			
+	  }
+	  
+	  @AfterMethod
+	  public void result(ITestResult result) throws IOException
+	  {
+		  if(result.getStatus() == ITestResult.FAILURE)
+			{
+				test.log(Status.FAIL, "Test case failed:"+result.getName());
+				test.log(Status.FAIL, "Test case failed:"+result.getThrowable());
+				String screenshotpath = ExtentReport.getScreenshot(driver, result.getName());
+				test.addScreenCaptureFromPath(screenshotpath);
+				//				test.fail("Failed", MediaEntityBuilder.createScreenCaptureFromPath(System.getProperty("user.dir")+"/screen-shot/reg.jpg").build());
+			}
+		  else if(result.getStatus() == ITestResult.SUCCESS)
+				{
+					test.log(Status.PASS, "Test case passed:"+result.getName());
+					String screenshotpath = ExtentReport.getScreenshot(driver, result.getName());
+					test.addScreenCaptureFromPath(screenshotpath);
+//					test.fail("Failed", MediaEntityBuilder.createScreenCaptureFromPath(System.getProperty("user.dir")+"/screen-shot/reg.jpg").build());
+				}
+	  }
+	  @AfterTest
+	public void afterTest()
+	{
+		  extent.flush();
+	}
+
+	@DataProvider(name="logindata")
+	public Object[][] loginData()
+	{
+
+		ExcelReadUtil config = new ExcelReadUtil("./src/test/resources/login-data.xlsx");
+
+		int rows = config.getRowCount(0);
+		Object[][] logindata = new Object[rows][2];
+		
+		for(int i=0 ; i <rows ; i++) {
+			System.out.println(config.getData(0, i, 0));
+			System.out.println(config.getData(0, i, 1));
+			
+			logindata[i][0]=config.getData(0, i, 0);
+			logindata[i][1]=config.getData(0, i, 1);
+			
+			
+		}
+		return logindata;
+
+	}
+	
+	
+	@DataProvider(name="registerdata")
+	public Object[][] registerData()
+	{
+
+		ExcelReadUtil config = new ExcelReadUtil("./src/test/resources/register-data.xlsx");
+
+		int rows = config.getRowCount(0);
+		Object[][] registerdata = new Object[rows][4];
+		
+		for(int i=0 ; i <rows ; i++) {
+			
+			registerdata[i][0]=config.getData(0, i, 0);
+			registerdata[i][1]=config.getData(0, i, 1);
+			registerdata[i][2]=config.getData(0, i, 2);
+			registerdata[i][3]=config.getNumericData(0, i, 3);
+			
+			
+		}
+		return registerdata;
+
+	}
+	
+	@DataProvider(name="passworddata")
+	public Object[][] passwordData()
+	{
+
+
+		
+		Object[][] passworddata = new Object[2][2];
+			
+			passworddata[0][0]="nayan123";
+			passworddata[0][1]="nayan1234";
+			passworddata[1][0]="nayan123";
+			passworddata[1][1]="nayan123";
+			
+		return passworddata;
+
+	}
+
+	
+}

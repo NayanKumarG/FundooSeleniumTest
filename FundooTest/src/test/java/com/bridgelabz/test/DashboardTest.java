@@ -38,27 +38,27 @@ public class DashboardTest extends BrowserFactory{
 		
 	
 		driver.findElement(By.xpath("//mat-icon[contains(text(),'refresh')]")).click();
-		sleep(5);
+		sleep(10);
 		
 		WebElement view = driver.findElement(By.xpath("//mat-icon[contains(text(),'view_agenda')]"));
 		view.click();
 		sleep(3);
 	}
 	
-	@Test
-	public void searchNoteTest() throws InterruptedException
-	{
-		LoginTest.loginPage("nayangunditharu@gmail.com", "nayan123");
-		sleep(5);
-		driver.get("http://localhost:4200/dashboard");
-		WebElement search = driver.findElement(By.xpath("//input[@placeholder='Search']")); 
-		search.sendKeys("fundoo");
-		sleep(7);
-		search.clear();
-		search.sendKeys("notes");
-		sleep(10);
-		
-	}
+//	@Test
+//	public void searchNoteTest() throws InterruptedException
+//	{
+//		LoginTest.loginPage("nayangunditharu@gmail.com", "nayan123");
+//		sleep(5);
+//		driver.get("http://localhost:4200/dashboard");
+//		WebElement search = driver.findElement(By.xpath("//input[@placeholder='Search']")); 
+//		search.sendKeys("fundoo");
+//		sleep(7);
+//		search.clear();
+//		search.sendKeys("notes");
+//		sleep(10);
+//		
+//	}
 
 
 	public void sleep(int sec)
