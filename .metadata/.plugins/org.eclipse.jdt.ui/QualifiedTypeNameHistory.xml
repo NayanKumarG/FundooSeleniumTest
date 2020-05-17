@@ -29,4 +29,5 @@
 <fullyQualifiedTypeName name="com.aventstack.extentreports.MediaEntityBuilder"/>
 <fullyQualifiedTypeName name="org.testng.annotations.AfterMethod"/>
 <fullyQualifiedTypeName name="com.bridgelabz.framework.BrowserFactory"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.JavascriptExecutor"/>
 </qualifiedTypeNameHistroy>
