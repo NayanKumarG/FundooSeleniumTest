@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="4" total="5" passed="0">
+<testng-results skipped="0" failed="1" ignored="7" total="8" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="135214" started-at="2020-05-17T19:03:16 BST" finished-at="2020-05-17T19:05:31 BST">
+  <suite name="Default suite" duration-ms="139746" started-at="2020-05-18T13:01:22 BST" finished-at="2020-05-18T13:03:42 BST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="135214" started-at="2020-05-17T19:03:16 BST" finished-at="2020-05-17T19:05:31 BST">
+    <test name="Default test" duration-ms="139746" started-at="2020-05-18T13:01:22 BST" finished-at="2020-05-18T13:03:42 BST">
       <class name="com.bridgelabz.test.NoteServiceTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bridgelabz.test.NoteServiceTest@167fdd33]" name="beforeMethod" is-config="true" duration-ms="36684" started-at="2020-05-17T19:03:16 BST" finished-at="2020-05-17T19:03:53 BST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.bridgelabz.test.NoteServiceTest@1786dec2]" name="beforeMethod" is-config="true" duration-ms="74221" started-at="2020-05-18T13:01:22 BST" finished-at="2020-05-18T13:02:37 BST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="archieveNote()[pri:0, instance:com.bridgelabz.test.NoteServiceTest@167fdd33]" name="archieveNote" duration-ms="46317" started-at="2020-05-17T19:03:53 BST" finished-at="2020-05-17T19:04:39 BST">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method status="FAIL" signature="addColloborator()[pri:0, instance:com.bridgelabz.test.NoteServiceTest@1786dec2]" name="addColloborator" duration-ms="58614" started-at="2020-05-18T13:02:37 BST" finished-at="2020-05-18T13:03:35 BST">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[timeout: Timed out receiving message from renderer: 42.591
+              <![CDATA[element click intercepted: Element <mat-icon _ngcontent-agl-c8="" class="mat-icon notranslate material-icons mat-icon-no-color" mattooltip="Refresh" role="img" aria-hidden="true" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);" aria-describedby="cdk-describedby-message-2" cdk-describedby-host="">...</mat-icon> is not clickable at point (1003, 33). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
   (Session info: chrome=81.0.4044.138)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-FFRREGV', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\Nayan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56509}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 413a4f2b7bc57c722fa839931764f1cf]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\Nayan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55437}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 391a4cce89af7686ee799300e090bb87]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 42.591
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <mat-icon _ngcontent-agl-c8="" class="mat-icon notranslate material-icons mat-icon-no-color" mattooltip="Refresh" role="img" aria-hidden="true" style="touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);" aria-describedby="cdk-describedby-message-2" cdk-describedby-host="">...</mat-icon> is not clickable at point (1003, 33). Other element would receive the click: <div class="cdk-overlay-backdrop cdk-overlay-dark-backdrop cdk-overlay-backdrop-showing"></div>
   (Session info: chrome=81.0.4044.138)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-FFRREGV', ip: '192.168.1.105', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\Nayan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56509}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 413a4f2b7bc57c722fa839931764f1cf
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.138 (8c6c7ba89cc9..., userDataDir: C:\Users\Nayan\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55437}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 391a4cce89af7686ee799300e090bb87
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -40,9 +40,9 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-at com.bridgelabz.test.LoginTest.loginPage(LoginTest.java:25)
-at com.bridgelabz.test.NoteServiceTest.archieveNote(NoteServiceTest.java:87)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at com.bridgelabz.test.NoteServiceTest.addColloborator(NoteServiceTest.java:156)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -73,11 +73,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- archieveNote -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.bridgelabz.test.NoteServiceTest@167fdd33]" name="afterMethod" is-config="true" duration-ms="51401" started-at="2020-05-17T19:04:40 BST" finished-at="2020-05-17T19:05:31 BST">
+        </test-method> <!-- addColloborator -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.bridgelabz.test.NoteServiceTest@1786dec2]" name="afterMethod" is-config="true" duration-ms="6753" started-at="2020-05-18T13:03:35 BST" finished-at="2020-05-18T13:03:42 BST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

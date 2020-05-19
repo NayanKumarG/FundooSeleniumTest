@@ -7,7 +7,7 @@
         <methods>
           <include name="beforeMethod"/>
           <include name="afterMethod"/>
-          <include name="archieveNote"/>
+          <include name="addColloborator"/>
         </methods>
       </class> <!-- com.bridgelabz.test.NoteServiceTest -->
     </classes>
