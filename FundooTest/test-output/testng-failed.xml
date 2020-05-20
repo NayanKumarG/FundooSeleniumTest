@@ -5,9 +5,12 @@
     <classes>
       <class name="com.bridgelabz.test.NoteServiceTest">
         <methods>
+          <include name="afterTest"/>
           <include name="beforeMethod"/>
+          <include name="beforeTest"/>
           <include name="afterMethod"/>
           <include name="addColloborator"/>
+          <include name="result"/>
         </methods>
       </class> <!-- com.bridgelabz.test.NoteServiceTest -->
     </classes>
