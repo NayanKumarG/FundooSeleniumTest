@@ -2080,3 +2080,89 @@ java.io.StreamCorruptedException: invalid stream header: 00000000
 2020-05-20 10:33:31,574 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2020-05-20 10:33:31,575 [Worker-72: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2020-05-20 10:33:31,577 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-05-20 16:26:44,582 [Worker-96: Launching LabelServiceTest.updateLabelTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 16:26:44,796 [Worker-96: Launching LabelServiceTest.updateLabelTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-20 16:26:44,801 [Worker-96: Launching LabelServiceTest.updateLabelTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 16:26:44,849 [Worker-96: Launching LabelServiceTest.updateLabelTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-05-20 16:29:32,009 [Worker-95: Launching LabelServiceTest.updateLabelTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 16:29:32,039 [Worker-95: Launching LabelServiceTest.updateLabelTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-20 16:29:32,070 [Worker-95: Launching LabelServiceTest.updateLabelTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 16:29:32,074 [Worker-95: Launching LabelServiceTest.updateLabelTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-05-20 16:32:31,401 [Worker-93: Launching LabelServiceTest.updateLabelTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 16:32:31,471 [Worker-93: Launching LabelServiceTest.updateLabelTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-20 16:32:31,476 [Worker-93: Launching LabelServiceTest.updateLabelTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 16:32:31,482 [Worker-93: Launching LabelServiceTest.updateLabelTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-05-20 16:35:56,540 [Worker-99: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 16:35:56,697 [Worker-99: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-20 16:35:56,699 [Worker-99: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 16:35:56,701 [Worker-99: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-05-20 16:50:05,910 [Worker-105: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bridgelabz:FundooTest:0.0.1-SNAPSHOT @ D:\FundooSelenium\FundooTest\pom.xml.
+2020-05-20 16:50:13,283 [Worker-105: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 16:50:13,287 [Worker-105: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-20 16:50:13,299 [Worker-105: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 16:50:13,300 [Worker-105: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-20 16:51:12,335 [Worker-105: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 16:51:12,337 [Worker-105: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-20 16:51:12,341 [Worker-105: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 16:51:12,343 [Worker-105: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-05-20 16:51:40,175 [Worker-97: Launching LabelServiceTest.addLabelTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 16:51:40,177 [Worker-97: Launching LabelServiceTest.addLabelTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-20 16:51:40,179 [Worker-97: Launching LabelServiceTest.addLabelTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 16:51:40,182 [Worker-97: Launching LabelServiceTest.addLabelTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-05-20 16:52:36,908 [Worker-106: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 16:52:36,909 [Worker-106: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-20 16:52:36,913 [Worker-106: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 16:52:36,915 [Worker-106: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-05-20 16:53:39,851 [Worker-104: Launching LabelServiceTest.addAndMapLabelTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 16:53:39,853 [Worker-104: Launching LabelServiceTest.addAndMapLabelTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-20 16:53:39,855 [Worker-104: Launching LabelServiceTest.addAndMapLabelTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 16:53:39,858 [Worker-104: Launching LabelServiceTest.addAndMapLabelTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-05-20 16:54:43,744 [Worker-104: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 16:54:43,745 [Worker-104: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-20 16:54:43,769 [Worker-104: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 16:54:43,772 [Worker-104: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-05-20 17:22:46,002 [Worker-111: Launching LabelServiceTest.addAndMapLabelTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 17:22:46,004 [Worker-111: Launching LabelServiceTest.addAndMapLabelTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-20 17:22:46,007 [Worker-111: Launching LabelServiceTest.addAndMapLabelTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 17:22:46,010 [Worker-111: Launching LabelServiceTest.addAndMapLabelTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-05-20 17:26:01,850 [Worker-114: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 17:26:01,884 [Worker-114: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-20 17:26:01,908 [Worker-114: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 17:26:01,910 [Worker-114: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-20 17:27:19,072 [Worker-113: Launching LabelServiceTest.addAndMapLabelTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 17:27:19,074 [Worker-113: Launching LabelServiceTest.addAndMapLabelTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-20 17:27:19,076 [Worker-113: Launching LabelServiceTest.addAndMapLabelTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 17:27:19,078 [Worker-113: Launching LabelServiceTest.addAndMapLabelTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-05-20 17:30:16,263 [Worker-113: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 17:30:16,438 [Worker-113: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-20 17:30:16,472 [Worker-113: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-20 17:30:16,473 [Worker-113: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-21 05:46:41,390 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-05-21 06:20:46,870 [Worker-23: Launching LabelServiceTest.updateLabelTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-21 06:20:47,129 [Worker-23: Launching LabelServiceTest.updateLabelTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-21 06:20:47,137 [Worker-23: Launching LabelServiceTest.updateLabelTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-21 06:20:47,140 [Worker-23: Launching LabelServiceTest.updateLabelTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-05-21 06:22:28,191 [Worker-19: Launching LabelServiceTest.updateLabelTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-21 06:22:28,199 [Worker-19: Launching LabelServiceTest.updateLabelTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-21 06:22:28,208 [Worker-19: Launching LabelServiceTest.updateLabelTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-21 06:22:28,228 [Worker-19: Launching LabelServiceTest.updateLabelTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-05-21 06:25:51,354 [Worker-23: Launching LabelServiceTest.updateLabelTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-21 06:25:51,536 [Worker-23: Launching LabelServiceTest.updateLabelTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-21 06:25:51,538 [Worker-23: Launching LabelServiceTest.updateLabelTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-21 06:25:51,540 [Worker-23: Launching LabelServiceTest.updateLabelTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-05-21 06:30:08,804 [Worker-27: Launching LabelServiceTest.updateLabelTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-21 06:30:09,017 [Worker-27: Launching LabelServiceTest.updateLabelTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-21 06:30:09,019 [Worker-27: Launching LabelServiceTest.updateLabelTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-21 06:30:09,076 [Worker-27: Launching LabelServiceTest.updateLabelTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-05-21 06:37:12,355 [Worker-21: Launching LabelServiceTest.addAndMapLabelTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-21 06:37:12,462 [Worker-21: Launching LabelServiceTest.addAndMapLabelTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-21 06:37:12,464 [Worker-21: Launching LabelServiceTest.addAndMapLabelTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-21 06:37:12,467 [Worker-21: Launching LabelServiceTest.addAndMapLabelTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2020-05-21 06:55:01,852 [Worker-40: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-21 06:55:01,946 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-21 06:55:01,949 [Worker-40: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-21 06:55:01,950 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-21 11:45:53,403 [Worker-52: Launching LabelServiceTest.addLabelTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-21 11:45:53,451 [Worker-52: Launching LabelServiceTest.addLabelTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2020-05-21 11:45:53,455 [Worker-52: Launching LabelServiceTest.addLabelTest] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-05-21 11:45:53,459 [Worker-52: Launching LabelServiceTest.addLabelTest] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources

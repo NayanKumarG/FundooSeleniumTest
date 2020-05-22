@@ -5,8 +5,7 @@ import org.testng.annotations.Test;
 import com.bridgelabz.framework.BrowserFactory;
 import com.bridgelabz.utility.ExcelReadUtil;
 
-import lombok.extern.java.Log;
-import lombok.extern.slf4j.Slf4j;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

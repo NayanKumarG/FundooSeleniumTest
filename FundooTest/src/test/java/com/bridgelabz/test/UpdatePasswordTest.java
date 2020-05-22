@@ -4,8 +4,6 @@ import org.testng.annotations.Test;
 
 import com.bridgelabz.framework.BrowserFactory;
 
-import lombok.Value;
-
 import javax.annotation.PropertyKey;
 
 import org.openqa.selenium.By;
